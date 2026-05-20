@@ -1,0 +1,48 @@
+{
+  "vendor": "bringerihogarar",
+  "name": "product-comparison",
+  "version": "0.0.1",
+  "title": "Bringeri Product Comparison",
+  "description": "Bringeri Product Comparison",
+  "defaultLocale": "es-AR",
+  "builders": {
+    "styles": "2.x",
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.product-summary-context": "0.x",
+    "vtex.product-summary": "2.x",
+    "vtex.store-resources": "0.x",
+    "vtex.store-icons": "0.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.list-context": "0.x",
+    "vtex.product-list-context": "0.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.apps-graphql": "3.x",
+    "vtex.product-context": "0.x"
+  },
+  "settingsSchema": {
+    "access": "public",
+    "title": "Product comparison",
+    "type": "object",
+    "properties": {
+      "maxNumberOfItemsToCompare": {
+        "title": "Comparison bucket upper limit",
+        "description": "Maximum number of items to compare. Default value is 10",
+        "type": "number"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

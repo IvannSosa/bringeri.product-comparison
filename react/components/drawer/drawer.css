@@ -1,0 +1,59 @@
+.drawer {
+}
+
+.compareProductsButton {
+}
+
+.drawerContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.drawerContainer :global(.vtex__icon-caret-up) {
+  display: none;
+}
+
+.drawerContainer :global(.vtex__icon-caret-down) {
+  display: none;
+}
+
+.drawerContainer :global(.vtex-product-summary-2-x-element--drawer-summary) {
+  flex-direction: row;
+}
+
+.drawerContainer
+  :global(.vtex-product-summary-2-x-column--drawer-summary-col2) {
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.drawerContainer
+  :global(.vtex-product-summary-2-x-container--drawer-summary)
+  :global(.vtex-product-summary-2-x-nameContainer),
+.drawerContainer
+  :global(.vtex-product-summary-2-x-container--drawer-summary)
+  :global(.vtex-product-summary-2-x-priceContainer) {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* .drawerContainer
+  :global(.vtex-product-summary-2-x-container--drawer-summary)
+  :global(.vtex-product-summary-2-x-nameContainer) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 175px;
+  white-space: nowrap;
+} */
+
+.drawerContainer :global(.vtex-product-summary-2-x-container--drawer-summary) {
+  max-width: 275px;
+}
+
+.expandCollapseButton {
+}
+
+.comparisonButtons {
+}

@@ -1,0 +1,27 @@
+.productSummaryRowContainer
+  :global(.vtex-product-summary-2-x-nameContainer) {
+  display: flex;
+  justify-content: center;
+}
+
+.rowContainer :global(.vtex-slider-layout-0-x-slide) {
+  margin-bottom: unset;
+}
+
+.productSummaryRowContainer
+  :global(.vtex-product-summary-2-x-imageContainer) {
+  border-radius: 0 0 6px 6px;
+  padding-bottom: 0.1rem;
+}
+
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-nameContainer),
+.productSummaryRowContainer :global(.vtex-product-summary-2-x-priceContainer) {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.productSummaryRowContainer
+  :global(.vtex-product-summary-2-x-buyButtonContainer) {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
